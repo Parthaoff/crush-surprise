@@ -1,0 +1,277 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;500;600&display=swap');
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 30px;
+  width: 85%;
+  max-width: 350px;
+  text-align: center;
+  transition: all 0.5s ease;
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.stickman-final {
+  width: 120px;    
+  height: auto;
+  margin: 0 auto 10px auto;
+
+  mix-blend-mode: multiply; 
+
+  
+  animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.main-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  color: #881337;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  margin: 0;
+}
+
+.hint {
+  margin-top: 15px;
+  color: #9d174d;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.sub-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  color: #be185d;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid rgba(190, 24, 93, 0.2);
+  padding-bottom: 10px;
+}
+
+.checklist-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.checklist-scroll {
+  overflow-y: auto;
+  flex-grow: 1;
+  padding-right: 5px;
+  text-align: left;
+}
+
+.checklist-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+.checklist-scroll::-webkit-scrollbar-thumb {
+  background: #db2777;
+  border-radius: 10px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  color: #831843;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.checklist-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.checkbox {
+  margin-right: 12px;
+  font-size: 1.3rem;
+  color: #db2777;
+  font-weight: bold;
+}
+
+.word {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.content {
+  width: 100%;
+  transition: opacity 0.5s ease;
+}
+.fade-in { opacity: 1; }
+.fade-out { opacity: 0; } */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;500;600&display=swap');
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #fad0c4, #ffdde1);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 30px;
+  width: 85%;
+  max-width: 380px;
+  text-align: center;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* --- Layout Container for Final Screen --- */
+.final-screen-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/* --- Stickman --- */
+.stickman-final {
+  width: 130px;
+  height: auto;
+  margin-bottom: 10px;
+  mix-blend-mode: multiply; /* Removes white background */
+  animation: bounce 2s infinite ease-in-out;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* --- Typography --- */
+.main-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3.5rem;
+  color: #881337;
+  margin: 0;
+}
+
+.hint {
+  margin-top: 15px;
+  color: #9d174d;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.sub-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  color: #be185d;
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.compliment-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 4rem; /* Big and bold */
+  color: #db2777;
+  text-shadow: 2px 2px 0px #fff;
+  margin: 5px 0 20px 0;
+  line-height: 1.1;
+  min-height: 80px; /* Prevents jumping if word is short */
+}
+
+/* --- Heart Logo --- */
+.heart-icon {
+  font-size: 3rem;
+  margin-top: 10px;
+  filter: drop-shadow(0 0 8px rgba(225, 29, 72, 0.4));
+  animation: heartbeat 1.5s infinite;
+}
+
+.stickman-intro {
+  width: 100px;    
+  height: auto;
+  margin: 0 auto 20px auto;
+  mix-blend-mode: multiply; 
+} 
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  15% { transform: scale(1.3); }
+  30% { transform: scale(1); }
+  45% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+/* --- Fade Transitions --- */
+.content {
+  width: 100%;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.fade-in {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.fade-out {
+  opacity: 0;
+  transform: translateY(10px) scale(0.95);
+}
