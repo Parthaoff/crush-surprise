@@ -128,6 +128,35 @@ function App() {
     }, 400);
   };
 
+  // --- NEW CODE: Security Protection ---
+  useEffect(() => {
+    // 1. Disable Right Click
+    const handleContextmenu = (e) => {
+      e.preventDefault();
+    };
+    document.addEventListener('contextmenu', handleContextmenu);
+
+    // 2. Disable Common Copy Shortcuts (Optional)
+    const handleKeyDown = (e) => {
+      // Block F12 (Inspect), Ctrl+Shift+I (Inspect), Ctrl+U (View Source)
+      if (
+        e.key === 'F12' || 
+        (e.ctrlKey && e.shiftKey && e.key === 'I') || 
+        (e.ctrlKey && e.key === 'u')
+      ) {
+        e.preventDefault();
+      }
+    };
+    document.addEventListener('keydown', handleKeyDown);
+
+    // Cleanup when leaving
+    return () => {
+      document.removeEventListener('contextmenu', handleContextmenu);
+      document.removeEventListener('keydown', handleKeyDown);
+    };
+  }, []);
+  // -------------------------------------
+
   // Auto-cycle the compliments (One by one)
   useEffect(() => {
     if (showFinal) {
