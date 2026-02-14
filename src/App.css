@@ -333,7 +333,7 @@
 .signature {
   font-family: 'Brush Script MT', cursive; /* Elegant cursive font */
   font-size: 1.3rem;
-  color: #fff;
+  color: red;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Soft Glow */
   margin-left: 5px;
 }
