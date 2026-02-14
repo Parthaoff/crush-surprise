@@ -193,7 +193,7 @@ function App() {
               <h1 className="compliment-text">{compliments[complimentIndex]}</h1>
               
               {/* 4. Heart at the bottom */}
-              <div className="heart-icon">❤️</div>
+              <div className="heart-icon"></div>
             </div>
           )}
         </div>
