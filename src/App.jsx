@@ -198,6 +198,11 @@ function App() {
           )}
         </div>
       </div>
+
+      <footer className="stylish-footer">
+        Created with <span className="heart-beat">❤️</span> by <span className="signature">Partha</span>
+      </footer>
+      
     </div>
   );
 }
