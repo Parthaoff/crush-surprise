@@ -165,18 +165,21 @@
   justify-content: center;
   align-items: center;
 
-  /* --- UPDATED TO LAVENDER GRADIENT --- */
-  background: linear-gradient(-45deg, #E6E6FA, #D8BFD8, #E1BEE7, #D1C4E9);
+  /* --- LIGHT LAVENDER GRADIENT --- */
+  /* Mix of: Very Light Purple, Lavender, Ghost White, and Pale Lilac */
+  background: linear-gradient(-45deg, #F3E5F5, #E6E6FA, #F8F8FF, #E1BEE7);
   
   background-size: 400% 400%;
-  animation: gradientBG 15s ease infinite; /* Kept the animation running */
+  animation: gradientBG 15s ease infinite;
+  
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
   cursor: pointer;
   
-  user-select: none; 
-  -webkit-user-select: none; 
+  user-select: none;
+  -webkit-user-select: none;
 }
+
 
 
 @keyframes gradientBG {
