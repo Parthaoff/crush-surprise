@@ -153,11 +153,7 @@
   font-family: 'Poppins', sans-serif;
   overflow: hidden;
   cursor: pointer;
-  
-  /* --- ADD THIS LINE --- */
-  user-select: none; /* Prevents text highlighting/copying */
-  -webkit-user-select: none; /* For Safari/Chrome */
-}*/
+*/
 .container {
   height: 100vh;
   width: 100vw;
