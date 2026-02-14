@@ -199,7 +199,7 @@ function App() {
         </div>
       </div>
 
-      <footer className="stylish-footer">
+      <footer className="stylish-footer signature">
         Created with <span className="heart-beat">❤️</span> by <span className="signature">Partha</span>
       </footer>
       
