@@ -141,7 +141,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;500;600&display=swap');
 
-.container {
+/*.container {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -157,7 +157,27 @@
   /* --- ADD THIS LINE --- */
   user-select: none; /* Prevents text highlighting/copying */
   -webkit-user-select: none; /* For Safari/Chrome */
+}*/
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* --- UPDATED TO LAVENDER GRADIENT --- */
+  background: linear-gradient(-45deg, #E6E6FA, #D8BFD8, #E1BEE7, #D1C4E9);
+  
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite; /* Kept the animation running */
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  cursor: pointer;
+  
+  user-select: none; 
+  -webkit-user-select: none; 
 }
+
 
 @keyframes gradientBG {
   0% { background-position: 0% 50%; }
