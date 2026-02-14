@@ -185,7 +185,10 @@
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.35);
+  /* Change 0.35 to 0.85 for a solid white look */
+  background: rgba(255, 255, 255, 0.85); 
+  
+  /* Keep the rest the same */
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
@@ -201,6 +204,7 @@
   justify-content: center;
   align-items: center;
 }
+
 
 /* --- Layout Container for Final Screen --- */
 .final-screen-container {
